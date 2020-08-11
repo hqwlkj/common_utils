@@ -192,7 +192,7 @@ class DateUtil {
     for (int i = 1; i < month; i++) {
       days = days + MONTH_DAY[i];
     }
-    if (isLeapYearByYear(year) && month == 2) {
+    if (isLeapYearByYear(year) && month > 2) {
       days = days + 1;
     }
     return days;
